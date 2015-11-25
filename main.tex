@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        
+\documentclass[11pt,a4paper,sans,usenames,dvipsnames]{moderncv}        
 
 % modern themes
 \moderncvstyle{classic}                           
@@ -15,16 +15,35 @@
 % character encoding
 \usepackage[utf8]{inputenc}                       
 
-\usepackage[scale=0.75]{geometry}
-
+\usepackage[scale=0.75, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 
 \usepackage{import}
+%%%
+% the following definition is from the file moderncvstyleclassic.sty
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries #3}%
+%   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}% I changed this line (with comma) ...
+    \ifthenelse{\equal{#4}{}}{}{#4}% ... into this one (without comma).
+    \ifthenelse{\equal{#5}{}}{}{#5}%
+    \ifthenelse{\equal{#6}{}}{}{#6}%
+    \strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+%%% People
+\definecolor{mblue}{RGB}{0, 51, 102}
+\definecolor{nblue}{RGB}{0, 0, 128}
+\newcommand{\jiaming}[0]{\href{http://jiaming.github.io}{\color{nblue} Jiaming Song}}
+\newcommand{\zhegan}[0]{\href{http://zhegan27.github.io}{\color{nblue} Zhe Gan}}
+\newcommand{\junzhu}[0]{\href{http://ml.cs.tsinghua.edu.cn/~jun}{\color{nblue} Jun Zhu}}
+\newcommand{\larrycarin}[0]{\href{http://people.ee.duke.edu/~lcarin}{\color{nblue} Lawrence Carin}}
 
+%%%
 \name{Jiaming}{Song}
 
-\phone[mobile]{+86 18001585905}                   
+\phone[mobile]{+86 18001585905}    
 \email{jiaming.tsong@gmail.com}                               
-\homepage{www.github.com/jiamings}
+\homepage{jiamings.github.io}
 %\homepage{cn.linkedin.com/jiamings}
 
 
@@ -33,20 +52,19 @@
 
 \input{src/education.tex}
 
-\input{src/extracurricular.tex}
+\input{src/publications.tex}
 
-\input{src/societies.tex}
-
-\input{src/language.tex}
-
-%\input{src/research.tex}
+\input{src/research.tex}
 
 \input{src/honors.tex}
 
 \input{src/programming.tex}
 
+\input{src/language.tex}
 
+\input{src/extracurricular.tex}
 
+\input{src/societies.tex}
 
 
 \end{document}
