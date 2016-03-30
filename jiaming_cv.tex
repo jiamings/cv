@@ -14,8 +14,17 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                       
-
-\usepackage[scale=0.75, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\iffalse
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\headheight 40pt
+\headsep 2pt
+\rhead{Application for Stanford Computer Science PhD Program}
+\lhead{Jiaming Song}
+\fi
+\usepackage[scale=0.75, top=1in, bottom=0.8cm, left=.8cm, right=.8cm]{geometry}
 
 \usepackage{import}
 %%%
@@ -37,7 +46,9 @@
 \newcommand{\zhegan}[0]{\href{http://zhegan27.github.io}{\color{nblue} Zhe Gan}}
 \newcommand{\junzhu}[0]{\href{http://ml.cs.tsinghua.edu.cn/~jun}{\color{nblue} Jun Zhu}}
 \newcommand{\larrycarin}[0]{\href{http://people.ee.duke.edu/~lcarin}{\color{nblue} Lawrence Carin}}
-
+\newcommand{\wenwuzhu}[0]{\href{http://media.cs.tsinghua.edu.cn/en/zww}{\color{nblue} Wenwu Zhu }}
+\newcommand{\pengcui}[0]{\href{media.cs.tsinghua.edu.cn/~multimedia/cuipeng/}{\color{nblue} Peng Cui}}
+\newcommand{\equalcontribution}[1]{#1$^\ast$}
 %%%
 \name{Jiaming}{Song}
 
