@@ -30,56 +30,56 @@
 %%%
 % the following definition is from the file moderncvstyleclassic.sty
 \renewcommand*{\cventry}[7][.25em]{%
-  \cvitem[#1]{#2}{%
-    {\bfseries #3}%
-%   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}% I changed this line (with comma) ...
-    \ifthenelse{\equal{#4}{}}{}{#4}% ... into this one (without comma).
-    \ifthenelse{\equal{#5}{}}{}{#5}%
-    \ifthenelse{\equal{#6}{}}{}{#6}%
-    \strut%
-    \ifx&#7&%
-      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
-%%% People
-\definecolor{mblue}{RGB}{0, 51, 102}
-\definecolor{nblue}{RGB}{0, 0, 128}
-\newcommand{\jiaming}[0]{\href{http://jiaming.github.io}{\color{nblue} Jiaming Song}}
-\newcommand{\zhegan}[0]{\href{http://zhegan27.github.io}{\color{nblue} Zhe Gan}}
-\newcommand{\junzhu}[0]{\href{http://ml.cs.tsinghua.edu.cn/~jun}{\color{nblue} Jun Zhu}}
-\newcommand{\larrycarin}[0]{\href{http://people.ee.duke.edu/~lcarin}{\color{nblue} Lawrence Carin}}
-\newcommand{\wenwuzhu}[0]{\href{http://media.cs.tsinghua.edu.cn/en/zww}{\color{nblue} Wenwu Zhu }}
-\newcommand{\pengcui}[0]{\href{media.cs.tsinghua.edu.cn/~multimedia/cuipeng/}{\color{nblue} Peng Cui}}
-\newcommand{\peterbailis}[0]{\href{http://www.bailis.org/}{\color{nblue} Peter Bailis}}
-\newcommand{\equalcontribution}[1]{#1$^\ast$}
-%%%
-\name{Jiaming}{Song}
+    \cvitem[#1]{#2}{%
+        {\bfseries #3}%
+        %   \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}% I changed this line (with comma) ...
+            \ifthenelse{\equal{#4}{}}{}{#4}% ... into this one (without comma).
+            \ifthenelse{\equal{#5}{}}{}{#5}%
+            \ifthenelse{\equal{#6}{}}{}{#6}%
+            \strut%
+            \ifx&#7&%
+            \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+            %%% People
+            \definecolor{mblue}{RGB}{0, 51, 102}
+            \definecolor{nblue}{RGB}{0, 0, 128}
+            \newcommand{\jiaming}[0]{\href{http://jiaming.github.io}{\color{nblue} Jiaming Song}}
+            \newcommand{\zhegan}[0]{\href{http://zhegan27.github.io}{\color{nblue} Zhe Gan}}
+            \newcommand{\junzhu}[0]{\href{http://ml.cs.tsinghua.edu.cn/~jun}{\color{nblue} Jun Zhu}}
+            \newcommand{\larrycarin}[0]{\href{http://people.ee.duke.edu/~lcarin}{\color{nblue} Lawrence Carin}}
+            \newcommand{\wenwuzhu}[0]{\href{http://media.cs.tsinghua.edu.cn/en/zww}{\color{nblue} Wenwu Zhu }}
+            \newcommand{\pengcui}[0]{\href{media.cs.tsinghua.edu.cn/~multimedia/cuipeng/}{\color{nblue} Peng Cui}}
+            \newcommand{\peterbailis}[0]{\href{http://www.bailis.org/}{\color{nblue} Peter Bailis}}
+            \newcommand{\equalcontribution}[1]{#1$^\ast$}
+            %%%
+            \name{Jiaming}{Song}
 
-%\phone[mobile]{+86 18001585905}    
-\email{tsong@cs.stanford.edu}                               
-\homepage{tsong.me}
-%\homepage{cn.linkedin.com/jiamings}
-
-
-\begin{document}
-\maketitle
-
-\input{src/education.tex}
-
-\input{src/publications.tex}
-
-\input{src/research.tex}
-
-\input{src/honors.tex}
-
-\input{src/programming.tex}
-
-\input{src/language.tex}
-
-\input{src/extracurricular.tex}
-
-\input{src/societies.tex}
+            %\phone[mobile]{+86 18001585905}    
+            \email{tsong@cs.stanford.edu}                               
+            \homepage{tsong.me}
+            %\homepage{cn.linkedin.com/jiamings}
 
 
-\end{document}
+            \begin{document}
+            \maketitle
+
+            \input{src/education.tex}
+
+            \input{src/publications.tex}
+
+            \input{src/research.tex}
+
+            \input{src/honors.tex}
+
+            \input{src/programming.tex}
+
+            \input{src/language.tex}
+
+            \input{src/extracurricular.tex}
+
+            \input{src/societies.tex}
 
 
-%% end of file `template.tex'.
+            \end{document}
+
+
+            %% end of file `template.tex'.
